@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Kết Quả</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <h1 th:text="${message}"></h1>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Khoa</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${sinhVien.ten}">Tên</td>
+            <td th:text="${sinhVien.tuoi}">Tuổi</td>
+            <td th:text="${sinhVien.khoa}">Khoa</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
